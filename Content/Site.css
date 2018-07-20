@@ -1,0 +1,86 @@
+﻿/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+    padding-bottom: 60px;
+    /*margin:60px;*/
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .jumbotron {
+        margin-top: 20px;
+    }
+
+    .body-content {
+        padding: 0;
+    }
+}
+
+footer {
+    background-color: darkgrey;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    padding: 5px 10px;
+}
+
+table{
+    margin-bottom:10px;
+}
+
+caption{
+    font-size:20px;
+    text-align:center;
+}
+
+th, td {
+    padding: 5px 10px;
+    text-align: center;
+}
+
+th {
+    color: #31deae;
+    font-size: 18px;
+}
+
+.table-striped > tbody > tr:nth-of-type(2n) {
+    background-color: #bdbdbd;
+}
+
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+    background-color: #545454;
+    color: white;
+}
+
+input{
+    margin:20px;
+}
+
+.Price {
+    color: #ed1c24;
+    font-size: 27px;
+    line-height: 1.2;
+    font-weight: bold;
+}
+
+.inline-block {
+    display:inline-block;
+    margin:20px;
+    max-width:45%;
+} 
